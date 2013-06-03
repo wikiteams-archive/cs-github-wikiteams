@@ -1,0 +1,22 @@
+{
+  "name": "cs-github-wikiteams",
+  "version": "0.0.0",
+  "description": "cs-github-wikiteams",
+  "main": "convert-markdown.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wikiteams/cs-github-wikiteams"
+  },
+  "author": "Oskar Jarczyk",
+  "license": "MIT",
+  "gitHead": "e6a55ed9abd436d3c60323e6cc1d2b3ad6784abb",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "cheerio": "~0.10.5",
+    "superagent": "~0.14.0",
+    "batch": "~0.3.2"
+  }
+}
