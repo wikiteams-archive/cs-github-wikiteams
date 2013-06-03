@@ -5,7 +5,7 @@ This software is available to public
 
 Copyright (C) 2013 - WikiTeams contributors
 
-cs-github-wikiteams is for free. You don't have to pay for it, and you can use it any way you want. It is developed as an Open Source project under the GNU General Public License (GPL). That means you have full access to the source code of this program. You can find it on our website at http://code.google.com/p/tortoisegit
+cs-github-wikiteams is for free. You don't have to pay for it, and you can use it any way you want. It is developed as an Open Source project under the GNU General Public License (GPL). That means you have full access to the source code of this program. You can find it on our website at https://github.com/wikiteams/cs-github-wikiteams
 Should you wish to modify or redistribute this program, or any part of it, you should read the full terms and conditions set out in the license agreement before doing so. A copy of the license is available on our website.
 If you simply wish to install and use this software, you need only be aware of the disclaimer conditions in the license, which are set out below.
 NO WARRANTY
