@@ -9,7 +9,7 @@ saveTopRepos = ->
     "https://api.github.com/legacy/repos/search/type=repo?sort=size&order=desc?page=#{page}&per_page=#{MAX_PAGES}"
 
   parse = (text) ->
-    JSON.parse(text).repositories.map (_) -> _.reponame
+    JSON.parse(text).repositories.map (_) -> _.name
 
   utils.batchGet urls, parse, (all) ->
     repos = [].concat.apply [], all
