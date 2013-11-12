@@ -1,14 +1,14 @@
 {
   "name": "cs-github-wikiteams",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "cs-github-wikiteams",
-  "main": "convert-markdown.js",
+  "main": "utils.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wikiteams/cs-github-wikiteams"
+    "url": "git://github.com/wikiteams/cs-github-wikiteams"
   },
   "author": "Oskar Jarczyk",
   "license": "MIT",

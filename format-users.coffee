@@ -1,6 +1,13 @@
 #!/usr/bin/env coffee
 fs = require 'fs'
 
+# Reducer.
+minimum = (min, current) ->
+  if current < min
+    current
+  else
+    min
+
 top = (stats, field, type) ->
   get = (stat) ->
     value = stat[field]
@@ -23,9 +30,9 @@ top = (stats, field, type) ->
     .join ', '
 
 stats2markdown = (datafile, mdfile, title) ->
-  minFollowers = 176
-  maxNumber = 256
   stats = require(datafile)
+  minFollowers = stats.map((_) -> _.followers).reduce(minimum, 1000)
+  maxNumber = 256
 
   today = new Date()
   from = new Date()
@@ -46,12 +53,12 @@ stats2markdown = (datafile, mdfile, title) ->
     .slice(0, #{maxNumber})
   ```
 
-  Made with data mining of GitHub.com ([raw data](https://gist.github.com/4524946), [script](https://github.com/paulmillr/top-github-users)) by [@paulmillr](https://github.com/paulmillr) with contribs of [@lifesinger](https://githubcom/lifesinger). Updated every sunday.
+  Made with data mining of GitHub.com ([raw data](https://gist.github.com/4524946), [script](https://github.com/paulmillr/top-github-users)) by [@paulmillr](https://github.com/paulmillr) with contribs of [@lifesinger](https://github.com/lifesinger). Updated once per week.
 
   <table cellspacing="0"><thead>
   <th scope="col">#</th>
-  <th scope="col">Username</th>
-  <th scope="col">Contributions</th>
+  <th scope="col">User</th>
+  <th scope="col">Contribs</th>
   <th scope="col">Language</th>
   <th scope="col">Location</th>
   <th scope="col" width="30"></th>
